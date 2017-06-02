@@ -29,7 +29,7 @@ class App {
       const nameInput = document.querySelector('#hoop-name');
       nameInput.value = result.name;
       this.hoop.loadData(result.data);
-      this.id = result.id;
+      this.id = result._id;
     }
     // Now that we have loaded existing data, enable saving.
     const saveForm = document.querySelector('form');

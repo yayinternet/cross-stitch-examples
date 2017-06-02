@@ -43,14 +43,6 @@ app.post('/save', jsonParser, onSaveHoop);
 
 async function onLoadHoop(req, res) {
   const result = await hoops.findOne();
-  let response = null;
-  if (result) {
-    response = {
-      id: result._id,
-      name: result.name,
-      data: result.data
-    };
-  }
-  res.json(response);
+  res.json(result);
 }
 app.get('/load', onLoadHoop);
