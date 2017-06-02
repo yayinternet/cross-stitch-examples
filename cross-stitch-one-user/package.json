@@ -1,0 +1,19 @@
+{
+  "name": "multi-hoop-cross-stitch",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Victoria Kirst (vrk@cs.stanford.edu)",
+  "license": "MIT",
+  "description": ""
+}
