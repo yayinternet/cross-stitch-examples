@@ -63,8 +63,11 @@ function isValid(response_json) {
   // Based on "Calling the tokeninfo endpoint":
   // https://developers.google.com/identity/sign-in/web/backend-auth
 
+  // ***NOTE:***
   // You should create your own client ID via these instructions:
   // https://developers.google.com/identity/sign-in/web/devconsole-project
+  // ***This client ID WILL BE DELETED by the end of the quarter, so please
+  // create your own!!!***
   const CLIENT_ID =
 		'779951118654-9fc4i79pl2qqqet6cs25tbq2ng1dkrip.apps.googleusercontent.com';
   var aud = response_json.aud;
