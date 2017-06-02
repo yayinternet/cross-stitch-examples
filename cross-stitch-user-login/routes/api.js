@@ -28,9 +28,9 @@ router.post('/create', jsonParser, onCreateHoop);
 async function onSaveHoop(req, res) {
   const idToken = req.body.idToken;
   const userInfo = await auth.validateToken(idToken);
+
   const userQuery = { email: userInfo.email };
   const userResponse = await req.users.findOne(userQuery);
-
   const id = req.body.id;
   const name = req.body.name;
   const data = req.body.data;

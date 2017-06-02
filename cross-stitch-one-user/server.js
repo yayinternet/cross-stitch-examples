@@ -19,7 +19,7 @@ async function startServer() {
   const db = await MongoClient.connect(MONGO_URL);
   const hoops = db.collection('hoops');
 
-  // Adds the "words" collection to every MongoDB request.
+  // Adds the "hoops" collection to every MongoDB request.
   function setCollection(req, res, next) {
     req.hoops = hoops;
     next();

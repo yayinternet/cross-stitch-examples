@@ -1,4 +1,3 @@
-
 const urlPathString = window.location.pathname;
 const parts = urlPathString.split('/');
 if (parts.length > 2) {
