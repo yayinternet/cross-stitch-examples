@@ -49,13 +49,16 @@ router.post('/save', jsonParser, onSaveHoop);
 
 async function onLoadHoop(req, res) {
   const idToken = req.params.idToken;
-  const userInfo = await auth.validateToken(idToken);
-  const userQuery = { email: userInfo.email };
-  const userResponse = await req.users.findOne(userQuery);
+  let result = null
+  try {
+    const userInfo = await auth.validateToken(idToken);
+    const userQuery = { email: userInfo.email };
+    const userResponse = await req.users.findOne(userQuery);
 
-  const id = req.params.id;
-  const query = { _id: ObjectID(id), authorId: ObjectID(userResponse._id) };
-  const result = await req.hoops.findOne(query);
+    const id = req.params.id;
+    const query = { _id: ObjectID(id), authorId: ObjectID(userResponse._id) };
+    result = await req.hoops.findOne(query);
+  } catch (e) { }
   res.json(result);
 }
 router.get('/load/:id/token/:idToken', onLoadHoop);

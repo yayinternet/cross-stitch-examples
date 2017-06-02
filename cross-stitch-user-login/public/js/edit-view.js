@@ -30,6 +30,9 @@ class EditView {
       const nameInput = document.querySelector('#hoop-name');
       nameInput.value = result.name || DEFAULT_NAME;
       this.hoop.loadData(result.data);
+    } else {
+      // Otherwise, redirect back to home.
+      window.location.href = '/';
     }
     // Now that we have loaded existing data, enable saving.
     const saveForm = document.querySelector('form');
