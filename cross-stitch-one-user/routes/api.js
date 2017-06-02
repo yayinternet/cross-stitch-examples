@@ -36,7 +36,6 @@ async function onLoadHoop(req, res) {
 }
 router.get('/load/:id', onLoadHoop);
 
-
 async function onLoadAllHoops(req, res) {
   const result = await req.hoops.find().toArray();
   res.json({ response: result });

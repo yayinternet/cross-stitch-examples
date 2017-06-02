@@ -1,4 +1,3 @@
-const hoopData = window.__DATA__;
 
 const urlPathString = window.location.pathname;
 const parts = urlPathString.split('/');
