@@ -1,7 +1,7 @@
 # Cross-stitch App Examples
 Three examples of a cross-stitch app, in varying complexity
 
-- (Cross-stitch terminology note: You create cross-stitch in a "[hoop](https://www.pinterest.com/search/pins/?q=cross-stitch%20hoop)," so each drawing is called a "hoop" in the app.)
+Cross-stitch terminology note: You create cross-stitch in a "[hoop](https://www.pinterest.com/search/pins/?q=cross-stitch%20hoop)," so each drawing is called a "hoop" in the app.
 
 ## cross-stitch-one-hoop
 - Cross-stitch app that saves to one global hoop / drawing.
