@@ -13,6 +13,7 @@ Three examples of a cross-stitch app, in varying difficulty
 ## cross-stitch-one-user
 - Cross-stitch app that allows you to create multiple hoops / drawings, without login or authentication
 - Individual cross stitch hoops are found via `id/<hoop id>`
+- Implementation note: This solution uses Handlebars templates but it doesn't really need to (the templates have no placeholders)
 - To run:
   - In your terminal, run `$ mongod`. Keep that process running and don't close the terminal.
   - Create a second terminal window. In this terminal window, navigate to the `cross-stitch-one-hoop/` directory
